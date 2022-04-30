@@ -9,10 +9,10 @@ const prefix = config.prefix;
 client.on('ready',async () => {  await console.log(client.user.tag);})
 client.on('ready', async () => {
  
- client.user.setActivity(`رێکلام بۆ من بنێرە`, { type:'WATCHING' })
+ client.user.setActivity(`reklam bomn freka`, { type:'WATCHING' })
 });
 
-//ZEROCODES//https://discord.gg/RMEQSbMtEk//ZEROCODES//
+//RAYANCODES//https://discord.gg/MppWu8yYSR RAYANCODES//
 ////////
 
 client.on("messageCreate", (message) => {
@@ -59,7 +59,7 @@ if (message.content === "reklam agornawa") {
         message.reply(`رێکلام لە تایبەت بۆم بنێرە`);
     }
 });
-//ZEROCODES//https://discord.gg/RMEQSbMtEk//ZEROCODES//
+//ZEROCODES//https://discord.gg/MppWu8yYSR//ZEROCODES//
 //////////////
 client.on("messageCreate", async message => {
   if (message.channel.type === "dm") return;
@@ -69,7 +69,7 @@ client.on("messageCreate", async message => {
     message.member = await message.guild.fetchMember(message);
 
   if (message.content.match(new RegExp(`^<@!?${client.user.id}>`))) {
-    return message.channel.send(`**بۆ رێکلام لە تایبەت بۆم بنێرە**`);
+    return message.channel.send(`**Reklam Xas Freka**`);
   }
 });
 
@@ -80,7 +80,7 @@ client.on('messageCreate',async (message) => {
     if (message.author.bot) return;
     if (message.channel.type == 'DM') {
       
-    let share = await client.channels.cache.get('IDCHANNEL'); //Id Channel Partner lera dane
+    let share = await client.channels.cache.get('958353778699014144'); //Id Channel Partner lera dane
     let args = await message.content.split(' ');
     let cool = await db.get(`cool_${message.author.id}`);
 
@@ -95,12 +95,12 @@ client.on('messageCreate',async (message) => {
     await client.fetchInvite(args[0]).then(async (invite) => {
         await db.set(`cool_${message.author.id}`,time);
         await share.send({content: `${invite}\n\` رێکلام کرا لەلایەن\` ${message.author}`});
-        await message.channel.send({content : `> ** رێکلام کرا لە ژووری ${share} تۆش بیکە **
+        await message.channel.send({content : `https://discord.gg/MppWu8yYSR> ** رێکلام کرا لە ژووری ${share} تۆش بیکە **
 https://discord.gg/LinkServert :white_check_mark:`}).catch(async (err) => {
-            await message.channel.send({content : `> **${message.author} لینک سێرڤەرت دانرا لە بەشی ${share}**`});
+            await message.channel.send({content : `https://discord.gg/MppWu8yYSR> **${message.author} لینک سێرڤەرت دانرا لە بەشی ${share}**`});
         })
     }).catch(async (err) => {
-        await message.channel.send({content: '> **:x: | ئەم لینکە هەڵەیە دوبارە بکەوە  !**'});
+        await message.channel.send({content: 'https://discord.gg/MppWu8yYSR> **:x: | ئەم لینکە هەڵەیە دوبارە بکەوە  !**'});
     })
    } catch (err) {
        return;
@@ -109,7 +109,7 @@ https://discord.gg/LinkServert :white_check_mark:`}).catch(async (err) => {
 //ZEROCODES//https://discord.gg/RMEQSbMtEk//ZEROCODES//
 const { joinVoiceChannel } = require('@discordjs/voice');
 
-let GUILD = client.guilds.cache.get('ID Server');
+let GUILD = client.guilds.cache.get('939207603240710157');
 const connection = joinVoiceChannel({
     channelId: 'ID Voice',
     guildId: GUILD.id,
